@@ -1,0 +1,120 @@
+﻿/*General Elements ---- START*/
+table {
+    background-color: white;
+    border: none;
+    border-radius: 2px;
+}
+
+body {
+    /*background-color: black;*/
+    background-image: url("https://images3.alphacoders.com/861/thumb-1920-86115.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*General Elements ---- END*/
+
+
+
+/*Containers ---- START*/
+/*        #jediTableContainer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }*/
+
+#photoContainer {
+    margin-top: 20%;
+    margin-left: 2%;
+}
+/*Containers ---- END*/
+
+
+/*Show Tables ----- START*/
+#jediTableShow, #sithTableShow {
+    width: 300px;
+    height: 400px;
+    border-radius: 50%;
+    transition: transform .2s;
+}
+
+#jediTableShow {
+    box-shadow: 10px 10px 10px #09229a;
+}
+
+#sithTableShow {
+    box-shadow: 10px 10px 10px #750505;
+}
+/*Show Tables ----- END*/
+
+
+
+/*On hover Zoom ---- START*/
+.zoom, .zoomWithoutBlur {
+    padding: 50px;
+    transition: transform .2s;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+    .zoom:hover {
+        -ms-transform: scale(1.5); /* IE 9 */
+        -webkit-transform: scale(1.5); /* Safari 3-8 */
+        transform: scale(1.2);
+        filter: blur(2px);
+    }
+
+    .zoomWithoutBlur:hover {
+        -ms-transform: scale(1.5); /* IE 9 */
+        -webkit-transform: scale(1.5); /* Safari 3-8 */
+        transform: scale(1.2);
+    }
+
+.hoverBlue:hover {
+    background-color: #34568b;
+    color: white;
+}
+
+.hoverRed:hover {
+    background-color: #750505;
+    color: white;
+}
+/*On hover Zoom ---- END*/
+
+
+
+
+/*Table images ---- START*/
+.forceUserPics {
+    width: 120px;
+    height: 160px;
+    border-radius: 50%;
+}
+/*Table images ---- END*/
+
+
+
+/*Input button elements ---- START*/
+.backBtns{
+    float:left;
+}
+
+.createBtns{
+    float:right;
+}
+/*Input button elements ---- END*/
+
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 3px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}

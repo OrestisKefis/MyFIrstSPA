@@ -1,0 +1,259 @@
+﻿<!--Jedi Table ----- START-->
+<div hidden id="jediTableContainer" class="container">
+    <table id="jediTable" class="table">
+        <thead>
+            <tr>
+                <th>Photo</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Specialiazation</th>
+                <th>Midichlorians</th>
+                <th>Side</th>
+                <th>Rank</th>
+                <th>Deceased</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+
+        <tbody>
+        </tbody>
+
+    </table>
+
+
+    <div style="overflow:auto">
+
+        <div class="form-group backBtns">
+            <input class="btn btn-primary form-control" type="submit" value="Go Back" />
+        </div>
+
+        <div class="form-group createBtns">
+            <input id="createJediBtn" type="submit" class="btn btn-success form-control createForceUserBtns" value="Create Jedi" />
+        </div>
+
+    </div>
+
+</div>
+<!--Jedi Table ----- END-->
+<!--Sith Table ----- START-->
+<div hidden class="container" id="sithTableContainer">
+    <table id="sithTable" class="table">
+        <thead id="jediTableHead">
+            <tr>
+                <th>Photo</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Specialiazation</th>
+                <th>Midichlorians</th>
+                <th>Side</th>
+                <th>Rank</th>
+                <th>Deceased</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+
+        <tbody id="jediTableBody">
+        </tbody>
+
+    </table>
+
+    <div style="overflow:auto">
+
+        <div class="form-group backBtns">
+            <input class="btn btn-primary form-control" type="submit" value="Go Back" />
+        </div>
+
+        <div class="form-group createBtns">
+            <input id="createSithBtn" type="submit" class="btn btn-success form-control createForceUserBtns" value="Create Sith" />
+        </div>
+
+    </div>
+
+</div>
+<!--Sith Table ----- END-->
+
+
+<div id="photoContainer" class="container">
+
+    <div class="row">
+
+        <div class="zoom column">
+
+            <img id="jediTableShow" src="https://i.pinimg.com/originals/86/fe/89/86fe8981b049d62502fed2db5f092ed7.jpg" alt="Alternate Text" />
+
+        </div>
+
+        <div class="zoom column">
+
+            <a href="#">
+                <img id="sithTableShow" src="https://i.pinimg.com/originals/ae/60/a5/ae60a5bb002ff498cc3d615a98ee0ab7.jpg" class="forceUserPics" alt="Alternate Text" />
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!--Details Modal ------ START-->
+<div id="myDetailsModal" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title"></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+
+                <div>
+                    <img id="userPhotoDet" src="#" alt="Force User Picture" style="width:300px; height:400px" />
+                </div>
+                <br />
+
+                <div id="firstNameDet">
+                    <strong>First Name: </strong>
+                    <span></span>
+                </div>
+
+                <div id="lastNameDet">
+                    <strong>Last Name: </strong>
+                    <span></span>
+                </div>
+
+                <div id="specialiazationDet">
+                    <strong>Specialiazation: </strong>
+                    <span></span>
+                </div>
+
+                <div id="midichloriansDet">
+                    <strong>Midichlorians: </strong>
+                    <span></span>
+                </div>
+
+                <div id="sideDet">
+                    <strong>Side: </strong>
+                    <span></span>
+                </div>
+
+                <div id="rankDet">
+                    <strong>Rank: </strong>
+                    <span></span>
+                </div>
+
+                <div id="deceasedDet">
+                    <strong>Deceased: </strong>
+                    <span></span>
+                </div>
+                <br />
+
+                <div id="descDet">
+                    <strong>Description: </strong>
+                    <p></p>
+                    <br />
+
+                    <span>
+                        More Info <a href="" target="_blank">here</a>
+                    </span>
+                </div>
+
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Details Modal ------ STOP-->
+<!--Create Modal ------ START-->
+<div id="myCreateModal" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title"></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+
+                <form id="forceUserCreateForm">
+                    <div class="form-group">
+                        <label for="FirstName"><strong><u>First Name</u></strong></label>
+                        <input class="form-control" id="FirstName" type="text"  placeholder="Give First name" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="LastName"><strong><u>Last Name</u></strong></label>
+                        <input class="form-control" id="LastName" type="text"  placeholder="Give Last name" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="PhotoUrl"><strong><u>Photo UR</u></strong></label>
+                        <input class="form-control" id="PhotoUrl" type="text" placeholder="Give photo URL"/>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="Specialiazation"><strong><u>Specialiazation</u></strong></label>
+                        <input class="form-control" id="Specialiazation" type="text"  placeholder="Give Specialiazation" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="Midichlorians"><strong><u>Midichlorians</u></strong></label>
+                        <input class="form-control" id="Midichlorians" type="number"  placeholder="Give Midichlorians" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="Side"><strong><u>Side</u></strong></label>
+                        <select disabled class="form-control" id="Side">
+     
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="Rank"><strong><u>Rank</u></strong></label>
+                        <select class="form-control" id="Rank">
+                            <option selected disabled>Not Selected</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="Deceased"><strong><u>Deceased</u></strong></label>
+                        <select class="form-control" id="Deceased">
+                            <option value="true">Passed Away</option>
+                            <option value="false">Not yet...</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <input id="createBtn" class="btn btn-success" type="submit" value="Create" />
+                        <input class="btn btn-danger" type="reset" value="Clear" />
+                    </div>
+                </form>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Create Modal ------ STOP-->
+
+
+
+
+@section MyScripts{
+    <script src="~/MyScripts/MyMainJavascript.js"></script>
+}
+
+
+
+@section MyCSS{
+
+    <link href="~/MyCss/MyCss.css" rel="stylesheet" />
+}
+
